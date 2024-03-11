@@ -30,7 +30,7 @@
         opacity: 0.4;
     }
     .logo{
-        padding-top: 4px;
+        padding-top: 5px;
         margin-left: 10px;
         width: 2%;
         background-color: #eceef3;
@@ -44,7 +44,7 @@
     .text-area{
         border:none;
         color: #0A3871;
-        margin-top: 1px;
+        margin-top: 5px;
         text-transform: lowercase;
         height: 288;
         flex-wrap: wrap;   
