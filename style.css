@@ -39,9 +39,7 @@
     main{
         display: flex;
         margin-bottom: 30px;
-        margin-left: 10px; 
-       
-      
+        margin-left: 10px;    
     }
     .text-area{
         border:none;
@@ -70,7 +68,7 @@
         border-radius: 24px;
         color: #0A3871;
         margin-left: 98px;
-        margin-top: 20px;
+        margin-top: 10px;
         padding-left: 20px;
         position:fixed;
         flex-wrap: wrap;
@@ -121,7 +119,7 @@
         cursor: pointer;
         height: 67px;
         margin-left: 108px;
-        margin-top: 520px;
+        margin-top: 530px;
         position:absolute;
         width: 338px;
     }
