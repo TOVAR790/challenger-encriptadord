@@ -1,4 +1,3 @@
-
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
 
@@ -32,7 +31,7 @@ function encriptar(stringEncriptada){
 
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(textArea.value)
-    mensaje.value = textoDesencriptado
+    mensaje.value = textoDesencriptado;
     textArea.value = "";
 
 }
@@ -49,6 +48,7 @@ function desencriptar(stringDesencriptada){
   
 return stringDesencriptada
 }
+
 function mostrarAlerta(){
     const textResultado = document.querySelector(".texto-resultado");
     textResultado.innerHTML = mensaje.value;
@@ -61,7 +61,16 @@ function mostrarAlerta(){
     });
     
 }
-    
+
+
+
+
+
+
+
+
+
+
 
 
 
