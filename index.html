@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alerta al copiar</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <title>Encriptador</title>
   </head>
   <body>
@@ -15,10 +13,11 @@
   </header>
   <main>
     <section>
-      <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-        <div>
-          <img class="informacion" src="imagenes/advertencia.png">  
-        </div>
+      <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui" ></textarea>
+      <div class="copiar-resultado">
+        <p class="texto-resultado"></p>
+      </div>
+        <img class="informacion" src="imagenes/advertencia.png">  
       <div class="botones" >
         <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
         <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>  
@@ -29,18 +28,15 @@
         <div>
            <button class="copiar" onclick="mostrarAlerta()">copiar</button>        
         </div>
+          <div class="copiar-resultado">
+            <p class="texto-resultado"></p>
+          </div>
       </section> 
     </main>
     <script src="script.js"></script>
     <footer class="footer" ><h2>&copy; 2024 MarthaTovar</h2></footer>
     </body>
 </html>
-
-
-
-
-
-
 
 
 
