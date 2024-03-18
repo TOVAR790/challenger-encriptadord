@@ -119,9 +119,7 @@
         display: inline-block;
         font-weight: 700;
         row-gap: 0rem;
-        flex-wrap: wrap;
-       
-        
+        flex-wrap: wrap;      
     }
 
     .btn-encriptar:hover{
@@ -149,7 +147,7 @@
     }
     .informacion{
         color: #495057;
-        font-size: 10px;
+        font-size: 5px;
         margin-left: 3%;
         font-family: cursive; 
         margin-right: 10px;
