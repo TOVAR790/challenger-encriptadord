@@ -1,15 +1,15 @@
 
 *{
     background-color: #eceef3;
-    font-family: 'Inter';
+    font-family:cursive;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 22px;
     flex-wrap: wrap;
    
     }
     .body{
         background-attachment: fixed;
-        width: 40px;
+        width: 20px;
         
     }
     /* Establece  la posición y el tamaño del fonto interactivo*/
@@ -30,7 +30,7 @@
         opacity: 0.4;
     }
     .logo{
-        padding-top: 5px;
+        padding-top: 4px;
         margin-left: 10px;
         width: 2%;
         background-color: #eceef3;
@@ -39,12 +39,12 @@
     main{
         display: flex;
         margin-bottom: 30px;
-        margin-left: 10px;    
+        margin-left: 10px;  
     }
     .text-area{
         border:none;
         color: #0A3871;
-        margin-top: 5px;
+        margin-top: 1px;
         text-transform: lowercase;
         height: 288;
         flex-wrap: wrap;   
@@ -68,7 +68,7 @@
         border-radius: 24px;
         color: #0A3871;
         margin-left: 98px;
-        margin-top: 5px;
+        margin-top: 20px;
         padding-left: 20px;
         position:fixed;
         flex-wrap: wrap;
@@ -81,7 +81,12 @@
     }
     .botones{
         display: flex;
-        margin-top: 18%;
+        margin-top: 8%;
+        position: relative;
+        
+    }
+    .botones:last-child{
+        order:1;
     }
     .btn-desencriptar{
         background-color: #d8dfe8;
@@ -89,9 +94,14 @@
         border-radius: 24px;
         color: #0A3871;
         cursor: pointer;
-        height: 67px;
+        height: 50px;
         margin-left: 30px;
         width: 328px;  
+        display: inline-block;
+        font-weight: 700;
+        row-gap: 0rem;
+        flex-wrap: wrap;
+      
     }
     .btn-desencriptar:hover{
         background-color: #70a2d3;
@@ -104,8 +114,14 @@
         border-radius: 24px;
         color: white;
         cursor: pointer;
-        height: 67px;
+        height: 50px;
         width: 328px;
+        display: inline-block;
+        font-weight: 700;
+        row-gap: 0rem;
+        flex-wrap: wrap;
+       
+        
     }
 
     .btn-encriptar:hover{
@@ -117,11 +133,14 @@
         border-radius: 24px;
         color: #0A3871;
         cursor: pointer;
-        height: 67px;
-        margin-left: 108px;
-        margin-top: 578px;
-        position:absolute;
+        height: 50px;
+        margin-left: 100px;
+        margin-top: 420px;
+        position:fixed;
         width: 338px;
+        font-weight: 700;
+        row-gap: 0em;
+        flex-wrap: wrap;
     }
     .copiar:hover{
         background-color:#adafb1;
@@ -130,10 +149,12 @@
     }
     .informacion{
         color: #495057;
-        font-size: 18px;
-        margin-left: 5px;
-        height: max-content;
-        font-family: cursive;   
+        font-size: 10px;
+        margin-left: 3%;
+        font-family: cursive; 
+        margin-right: 10px;
+       
+       
     }
     
     .footer{
@@ -144,35 +165,39 @@
     }
     
     /*Responsive*/
-    @media screen and (min-width: 1024) {
-     .logo{
-        width: 10%;
-     }
-       .main{
-        margin-left: 20%;
-       }
-     .text-area,
-     .mensaje,
-     .copiar{
-        width: 50%;
-        flex-direction: column;
-        position: fixed;
-        height: 100vh;
-        top: 0;
-        padding: 100px 0px;
+    @media  screen and (min-width: 1024) {
 
-     }
-     .botones{
-        justify-content: center;
-     }
-     .btn-desencriptar,
-     .btn-encriptar{
-        width: 200px;
-        flex-direction: column;
- 
-     }
-.footer{
-    text-align: center;
-}
+        logo{
+            width: 10%;
+         }
+           .main{
+            margin-left: 20%;
+           }
+         .text-area,
+         .mensaje,
+         .copiar{
+            width: 50%;
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            padding: 100px 0px;
+
+        }
+         .botones {
+            justify-content: center;
+        }
+        
+            .btn-desencriptar,
+            .btn-encriptar{
+            width: calc(50% -10px);
+            margin: 0 10 px;
+            padding: 15px 105;
+            flex-direction: column;
+            
+        }
+            .footer {
+            text-align: center;
+        }
     }
     
