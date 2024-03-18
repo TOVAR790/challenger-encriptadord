@@ -49,11 +49,18 @@ function desencriptar(stringDesencriptada){
   
 return stringDesencriptada
 }
-
-function mostrarAlerta() {
-    alert("¡Texto copiado al portapapeles!");
+function mostrarAlerta(){
+    const textResultado = document.querySelector(".texto-resultado");
+    textResultado.innerHTML = mensaje.value;
+    navigator.clipboard.writeText(mensaje.value)
+    .then(() => {
+     alert("Texto copiado");
+    })
+    .catch(err => {
+     console.error('Error a intentar copiar al texto: ', err );
+    });
+    
 }
-
     
 
 
